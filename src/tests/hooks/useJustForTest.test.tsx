@@ -8,7 +8,13 @@ test("show multiple examples", () => {
     testAssertEquals,
     testToBeInstanceOf,
     testToHaveReturned,
+    toContainEqual,
+    testToStrictEqual,
+    testToBeLessThan,
+    testToBeNull
+
   } = result.current;
+
 
   expect(testBoolTrue()).toBeTruthy();
   expect(testAssertEquals()).toEqual("same");
@@ -17,4 +23,11 @@ test("show multiple examples", () => {
   const fnTest = jest.fn(testToHaveReturned);
   fnTest();
   expect(fnTest).toHaveReturnedWith(0);
+  expect(toContainEqual()).toContainEqual({delicious: true, sour: false });
+  expect(toContainEqual()).toContainEqual({a: "a",b: "b",});
+  expect(testToStrictEqual()).toStrictEqual([{delicious: true, sour: false }]);
+  expect(testToBeLessThan()).toBeLessThan(2000);
+  expect(testToBeNull()).toBeNull();
+
+
 });

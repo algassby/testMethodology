@@ -5,5 +5,4 @@ const Result = ({ value }: { value: string }) => {
     </div>
   );
 };
-
 export default Result;

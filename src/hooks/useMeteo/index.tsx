@@ -11,6 +11,7 @@ const useMeteo = () => {
         setUser(res.results[0]);
       });
   };
+  
 
   const loadMeteo = () => {
     fetch("https://prevision-meteo.ch/services/json/aix-en-provence")
