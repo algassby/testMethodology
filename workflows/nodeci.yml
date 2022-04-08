@@ -10,7 +10,7 @@
         - name: Checkout 
           uses: actions/checkout@master
 
-        - name: Install 🔧
+        - name: Install
           run: npm install
 
         - name: Lint 
