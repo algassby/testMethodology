@@ -13,7 +13,7 @@ test("show multiple examples", () => {
 
   expect(addition("1","1")).toEqual("2");
   expect(substraction("4","2")).toEqual("2");
-  expect(division("4","2")).toEqual("2");
+  expect(division("4","2")).toEqual("8");
   expect(modulo("5","3")).toEqual("2");
   expect(square("9")).toEqual("3");
   
